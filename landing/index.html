@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telefonchi — Mobile Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="img/telefonchi.png" class="logo-img" alt="Telefonchi">
+        <span class="logo-text">Telefonchi</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Imkoniyatlar</a></li>
+        <li><a href="#screenshots">Ekranlar</a></li>
+        <li><a href="#tech">Texnologiya</a></li>
+        <li><a href="#download" class="nav-cta">Yuklab olish</a></li>
+      </ul>
+      <button class="burger" id="burger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🚀 Flutter · Firebase · AI</div>
+      <h1 class="hero-title">
+        O'zbekistondagi eng qulay<br />
+        <span class="gradient-text">telefon bozori</span>
+      </h1>
+      <p class="hero-subtitle">
+        Telefonlar sotib oling yoki soting — tezkor, xavfsiz va qulay.<br />
+        Real vaqt chat, AI maslahat va buyurtma kuzatish bilan.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          APK yuklab olish
+        </a>
+        <a href="#features" class="btn btn-outline">Ko'proq bilish</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Rol: Xaridor & Sotuvchi</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">AI</span>
+          <span class="stat-label">Gemini maslahat boti</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Real vaqt chat</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-phone">
+      <div class="phone-wrap">
+        <img src="img/promo.png" alt="Telefonchi App"
+          style="width: 100%; border-radius: 40px; box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+        <div class="phone-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Imkoniyatlar</div>
+      <h2 class="section-title">Hamma narsa bir joyda</h2>
+      <p class="section-sub">Xaridor ham, sotuvchi ham uchun optimallashtirilgan</p>
+
+      <div class="features-grid">
+        <div class="feat-card" data-delay="0">
+          <div class="feat-icon buyer">🛒</div>
+          <h3>Xaridor paneli</h3>
+          <p>Kategoriya bo'yicha filtrlash, mahsulot qidirish, savatcha, buyurtma kuzatish va AI maslahat.</p>
+          <ul class="feat-list">
+            <li>✅ Qidiruv & Filtr</li>
+            <li>✅ Savatcha & Checkout</li>
+            <li>✅ Buyurtma kuzatish</li>
+            <li>✅ Wishlist</li>
+          </ul>
+        </div>
+        <div class="feat-card" data-delay="100">
+          <div class="feat-icon seller">📦</div>
+          <h3>Sotuvchi paneli</h3>
+          <p>Mahsulot qo'shish, buyurtmalar boshqaruvi, statistika va daromad hisoboti.</p>
+          <ul class="feat-list">
+            <li>✅ Mahsulot boshqaruvi</li>
+            <li>✅ Buyurtmalar holati</li>
+            <li>✅ Statistika kartalar</li>
+            <li>✅ Daromad hisobi</li>
+          </ul>
+        </div>
+        <div class="feat-card" data-delay="200">
+          <div class="feat-icon chat">💬</div>
+          <h3>Real vaqt chat</h3>
+          <p>Xaridor va sotuvchi o'rtasida Firebase Firestore orqali real vaqt xabar almashish.</p>
+          <ul class="feat-list">
+            <li>✅ Real vaqt xabarlar</li>
+            <li>✅ O'qilmagan badge</li>
+            <li>✅ Mahsulot bo'yicha chat</li>
+            <li>✅ Chat tarixi</li>
+          </ul>
+        </div>
+        <div class="feat-card" data-delay="300">
+          <div class="feat-icon ai">🤖</div>
+          <h3>AI Maslahat (Gemini)</h3>
+          <p>Google Gemini AI orqali telefon tanlashda yordam, narx taqqoslash va texnik maslahat.</p>
+          <ul class="feat-list">
+            <li>✅ Google Gemini AI</li>
+            <li>✅ Uzbek & Rus til</li>
+            <li>✅ Telefon taqqoslash</li>
+            <li>✅ Narx maslahat</li>
+          </ul>
+        </div>
+        <div class="feat-card" data-delay="400">
+          <div class="feat-icon map">📍</div>
+          <h3>Yetkazib berish & Xarita</h3>
+          <p>Flutter Map orqali manzil tanlash, yetkazib berish xizmatlari va narx hisoblash.</p>
+          <ul class="feat-list">
+            <li>✅ Interaktiv xarita</li>
+            <li>✅ GPS geolokatsiya</li>
+            <li>✅ Kuryer xizmatlari</li>
+            <li>✅ Manzil saqlash</li>
+          </ul>
+        </div>
+        <div class="feat-card" data-delay="500">
+          <div class="feat-icon theme">🎨</div>
+          <h3>Dizayn & Tema</h3>
+          <p>Light va Dark tema, glassmorphism effektlar, navy #000666 rang palitrasi va Google Fonts.</p>
+          <ul class="feat-list">
+            <li>✅ Dark / Light tema</li>
+            <li>✅ Glassmorphism UI</li>
+            <li>✅ Inter shrift</li>
+            <li>✅ Responsive dizayn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-label">Ekranlar</div>
+      <h2 class="section-title">Chiroyli interfeys</h2>
+      <p class="section-sub">Figma dizayniga asoslangan zamonaviy UI</p>
+
+      <div class="screens-row">
+        <div class="screen-preview sp1">
+          <div class="sp-label">Kirish</div>
+          <div class="sp-inner login-preview">
+            <div style="font-size:28px;margin-bottom:8px">📱</div>
+            <div style="font-size:13px;font-weight:700;color:#ECF0F1">Xush kelibsiz</div>
+            <div style="font-size:10px;color:#90A4AE;margin-bottom:12px">Mobile Market</div>
+            <div class="prev-input">📧 Email</div>
+            <div class="prev-input">🔒 Parol</div>
+            <div class="prev-btn">KIRISH</div>
+          </div>
+        </div>
+        <div class="screen-preview sp2 active">
+          <div class="sp-label">Asosiy</div>
+          <div class="sp-inner home-preview">
+            <div class="prev-appbar">📱 Mobile Market &nbsp; 🔔</div>
+            <div class="prev-search">🔍 Qidirish...</div>
+            <div style="display:flex;gap:4px;margin-bottom:8px">
+              <span class="prev-chip sel">Barchasi</span>
+              <span class="prev-chip">iPhone</span>
+              <span class="prev-chip">Samsung</span>
+            </div>
+            <div class="prev-banner">🎉 Chegirmalar</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+              <div class="prev-card">📱<br /><small>iPhone 17</small></div>
+              <div class="prev-card" style="background:#6a1a1a">📱<br /><small>3dmax</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="screen-preview sp3">
+          <div class="sp-label">Dashboard</div>
+          <div class="sp-inner dash-preview">
+            <div class="prev-appbar">👤 Salom, Sotuvchi</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+              <div class="prev-stat">📦<br /><b>3</b><br /><small>Mahsulot</small></div>
+              <div class="prev-stat">📋<br /><b>5</b><br /><small>Buyurtma</small></div>
+              <div class="prev-stat">💰<br /><b>25K</b><br /><small>Daromad</small></div>
+              <div class="prev-stat">⭐<br /><b>4.8</b><br /><small>Reyting</small></div>
+            </div>
+            <div style="font-size:9px;color:#90A4AE">So'nggi buyurtmalar</div>
+          </div>
+        </div>
+        <div class="screen-preview sp4">
+          <div class="sp-label">Chat</div>
+          <div class="sp-inner chat-preview">
+            <div class="prev-appbar">💬 Xabarlar</div>
+            <div class="prev-chat-item">
+              <div class="prev-avatar">X</div>
+              <div>
+                <div style="font-size:11px;font-weight:600;color:#ECF0F1">xxx</div>
+                <div style="font-size:9px;color:#00BCD4">iphone</div>
+                <div style="font-size:9px;color:#90A4AE">utrut</div>
+              </div>
+              <div style="margin-left:auto;font-size:9px;color:#78909C">13:11</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech" id="tech">
+    <div class="container">
+      <div class="section-label">Texnologiya</div>
+      <h2 class="section-title">Ishlatilgan texnologiyalar</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-logo flutter">F</div>
+          <div class="tech-name">Flutter</div>
+          <div class="tech-desc">Cross-platform UI framework</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-logo firebase">🔥</div>
+          <div class="tech-name">Firebase</div>
+          <div class="tech-desc">Auth, Firestore, Storage</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-logo gemini">✦</div>
+          <div class="tech-name">Gemini AI</div>
+          <div class="tech-desc">Google AI maslahat boti</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-logo provider">P</div>
+          <div class="tech-name">Provider</div>
+          <div class="tech-desc">State management</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-logo map">🗺</div>
+          <div class="tech-name">Flutter Map</div>
+          <div class="tech-desc">Interaktiv xarita</div>
+        </div>
+        <div class="tech-card">
+          <div class="tech-logo dart">D</div>
+          <div class="tech-name">Dart</div>
+          <div class="tech-desc">Dasturlash tili</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download" id="download">
+    <div class="download-bg">
+      <div class="orb orb-dl1"></div>
+      <div class="orb orb-dl2"></div>
+    </div>
+    <div class="container">
+      <div class="download-content">
+        <div class="download-text">
+          <div class="section-label light">Yuklab olish</div>
+          <h2 class="section-title light">Hoziroq boshlang</h2>
+          <p class="section-sub light">APK faylini qurilmangizga yuklab, o'rnating va foydalanishni boshlang.</p>
+          <div class="download-steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-text">APK faylini yuklab oling</div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-text">Android sozlamalardan "Noma'lum manbalar"ni yoqing</div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-text">APK ni oching va o'rnating</div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-text">Ro'yxatdan o'ting va foydalaning!</div>
+            </div>
+          </div>
+        </div>
+        <div class="download-box">
+          <div class="dl-card">
+            <img src="img/telefonchi.png" class="logo-img" alt="Telefonchi" style="margin-bottom: 12px; width: 56px; height: 56px;">
+            <div class="dl-app-name">Telefonchi</div>
+            <div class="dl-app-version">Versiya 1.0.5 (Oxirgisi)</div>
+            <div class="dl-app-info">
+              <span>🤖 Android 5.0+</span>
+              <span>📦 ~56 MB</span>
+            </div>
+            <a href="app/telefonchi.apk" class="btn btn-download" download>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              APK yuklab olish
+            </a>
+            <p class="dl-note">🚀 Yangi APK tayyor! Valyuta ayirboshlash va yetkazib berish narxi hisob-kitobidagi xatoliklar to'liq tuzatildi. (v1.0.5)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">📱</div>
+            <span class="logo-text">Telefonchi</span>
+          </div>
+          <p>O'zbekistondagi mobil telefon bozori uchun zamonaviy Flutter ilovasi.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Sahifalar</h4>
+          <a href="#features">Imkoniyatlar</a>
+          <a href="#screenshots">Ekranlar</a>
+          <a href="#tech">Texnologiya</a>
+          <a href="#download">Yuklab olish</a>
+        </div>
+        <div class="footer-links">
+          <h4>Texnologiyalar</h4>
+          <a href="#">Flutter 3.x</a>
+          <a href="#">Firebase</a>
+          <a href="#">Gemini AI</a>
+          <a href="#">Flutter Map</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Telefonchi · Flutter ile qurilgan</span>
+        <span>Mobile Marketplace v1.0.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
